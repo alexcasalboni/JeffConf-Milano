@@ -1,0 +1,29 @@
+{
+  "name": "jeffconf-milano",
+  "version": "0.0.1",
+  "description": "JeffConf Milano website",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcasalboni/JeffConf-Milano.git"
+  },
+  "keywords": [
+    "jeffconf",
+    "serverless",
+    "website"
+  ],
+  "author": "Alex Casalboni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexcasalboni/JeffConf-Milano/issues"
+  },
+  "homepage": "https://github.com/alexcasalboni/JeffConf-Milano#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  }
+}
