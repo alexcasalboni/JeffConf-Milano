@@ -1,1 +1,2 @@
-# JeffConf-Milano
+# JeffConf Italy @ Milan 
+JeffConf Website
