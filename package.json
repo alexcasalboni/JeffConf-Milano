@@ -2,8 +2,7 @@
   "name": "jeffconf-milano",
   "version": "0.0.1",
   "description": "JeffConf Milano website",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexcasalboni/JeffConf-Milano.git"
@@ -24,6 +23,9 @@
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-uglify": "^3.0.0",
-    "pump": "^1.0.2"
+    "pump": "^1.0.2",
+    "connect-history-api-fallback": "^1.3.0"
+  },
+  "dependencies": {
   }
 }
