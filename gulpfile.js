@@ -4,48 +4,76 @@ var uglify = require('gulp-uglify');
 var pump = require('pump');
 var browserSync = require('browser-sync').create();
 var historyApiFallback = require('connect-history-api-fallback');
- 
+
 gulp.task('compress', function (cb) {
-  pump([
+    "use strict";
+    pump([
         gulp.src('src/*.js'),
         uglify(),
         gulp.dest('dist')
-    ],
-    cb
-  );
+    ], cb);
 });
 
- 
-gulp.task('minify', function() {
-  return gulp.src('src/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist'));
+
+gulp.task('minify', function () {
+    "use strict";
+    return gulp
+        .src('src/*.html')
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('copy', function(){
-  return gulp.src(['src/_redirects','src/*.xml','src/*.css','src/*.txt'])
-    .pipe(gulp.dest('dist'));
+gulp.task('copy', function () {
+    "use strict";
+    return gulp
+        .src([
+            'src/*.xml',
+            'src/*.css',
+            'src/*.txt'
+        ])
+        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build',['minify','copy','compress']);
+gulp.task('copy-libs', function () {
+    "use strict";
+    return gulp
+        .src([
+            'src/libs/**',
+        ])
+        .pipe(gulp.dest('dist/libs'));
+});
 
-// Static server
-gulp.task('browser-sync', function() {
+gulp.task('copy-imgs', function () {
+    "use strict";
+    return gulp
+        .src([
+            'src/imgs/**',
+        ])
+        .pipe(gulp.dest('dist/imgs'));
+});
+
+gulp.task('build', [
+    'minify', 'copy', 'copy-libs', 'copy-imgs', 'compress'
+]);
+
+gulp.task('serve-dev', function () {
+    "use strict";
     browserSync.init({
         server: {
             baseDir: "./src",
-            middleware: [ historyApiFallback() ],
+            middleware: [historyApiFallback()]
         }
     });
-    gulp.watch("./src/index.html").on("change", browserSync.reload);
+    gulp.watch("./src/*.html").on("change", browserSync.reload);
 });
 
-// or...
 
-/*
-gulp.task('browser-sync', function() {
+gulp.task('serve-dist', function () {
+    "use strict";
     browserSync.init({
-        proxy: "yourlocal.dev"
+        server: {
+            baseDir: "./dist",
+            middleware: [historyApiFallback()]
+        }
     });
 });
-*/
