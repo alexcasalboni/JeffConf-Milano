@@ -3,6 +3,7 @@ var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var browserSync = require('browser-sync').create();
+var historyApiFallback = require('connect-history-api-fallback');
  
 gulp.task('compress', function (cb) {
   pump([
@@ -32,9 +33,11 @@ gulp.task('build',['minify','copy','compress']);
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./src"
+            baseDir: "./src",
+            middleware: [ historyApiFallback() ],
         }
     });
+    gulp.watch("./src/index.html").on("change", browserSync.reload);
 });
 
 // or...
