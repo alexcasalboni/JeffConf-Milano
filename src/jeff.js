@@ -49,7 +49,10 @@
     }
 
     function loadEventbrite() {
-        document.getElementById("eventbrite").src = "//eventbrite.co.uk/tickets-external?eid=34905982734&ref=etckt";
+        var iframe = document.getElementById("eventbrite");
+        if (iframe) {
+            iframe.src = "//eventbrite.co.uk/tickets-external?eid=34905982734&ref=etckt";
+        }
     }
 
     window.onpopstate = function (event) {
