@@ -16,6 +16,7 @@
     <link rel="canonical" href="https://milan.jeffconf.com" />
     <link rel="shortcut icon" type="image/x-icon" href="/imgs/jeff-italy.ico"/>
     <link rel="stylesheet" href="/libs/tachyons.min.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body class="bg-white">
@@ -57,13 +58,10 @@
         
         <div id="home" class="dtc w-100">
             <div class="tc tl-ns">
-            <!--    <h3>Why?</h3> -->
-                <div class="black mw6 mw7-ns tc center ph3 ph0-ns">
-                  <p class="mb3">
-                  <h3 class="f2 fw6 tc code">One Day. One Track. One Community.</h3>
-                  </p>
-                  <p>
-                  A collaboration in conjunction with the Serverless Italy Meetup, JeffConf is an attempt to move past the word Serverless, and focus on the use of these platforms and the value they provide. 
+                <div class="black mw6 mw8-ns tc center ph3 ph0-ns">
+                  <h3 class="lang f2 fw6 tc code" data-lang="Un giorno. Una traccia. Una community.">One Day. One Track. One Community.</h3>
+                  <p class="mw7-ns center">
+                    A collaboration in conjunction with the Serverless Italy Meetup, JeffConf is an attempt to move past the word Serverless, and focus on the use of these platforms and the value they provide. 
                   </p>
                 </div>
 
@@ -72,14 +70,14 @@
 
                   <article onclick="changePage('venue')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
                     <img src="/imgs/gvp-small.jpg" class="db w-100 dim" alt="JeffConf Milan 2017 Venue" height="143" />
-                    <div class="pa2 ph3-ns pb3-ns bg-dark-red">
+                    <div class="pa2 ph3-ns pb3-ns bg-green">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
                           <span class="fw6 f5 f4-ns mv0 white underline-hover">Venue</span>
                         </div>
                       </div>
                       <p class="f6 lh-copy measure mt2 white-90">
-                        The 191 year old St John&#39;s Church, a short walk from Old Street station, provides a relaxed venue for JeffConf.
+                        Grand Visconti Palace is a mix of tradition and modernity in Milan, and an iconic location to spread cultural ideas.
                       </p>
                     </div>
                   </article>
@@ -100,7 +98,7 @@
 
                   <article onclick="changePage('speakers')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
                     <img src="/imgs/speakers.jpg" class="db w-100 dim" alt="JeffConf Speakers" height="143" />
-                    <div class="pa2 ph3-ns pb3-ns bg-green">
+                    <div class="pa2 ph3-ns pb3-ns bg-dark-red">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
                           <span class="fw6 f5 f4-ns mv0 white underline-hover">Speakers</span>
@@ -381,6 +379,11 @@
     </p>
   </div>
 </footer>
+
+<div class="lang-switch-container">
+  <span class="lang-switch-link lang-it underline-hover pointer" onclick="changeLanguage('it')">IT</span>
+  <span class="lang-switch-link lang-en underline-hover pointer" onclick="changeLanguage('en')">EN</span>
+</div>
 
   <script type="text/javascript" src="/jeff.js"></script>
 </html>

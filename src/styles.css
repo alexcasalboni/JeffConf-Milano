@@ -1,0 +1,15 @@
+.lang-switch-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+}
+
+.lang-switch-link {
+    /* TODO */
+}
+
+[lang="en"] .lang-en,
+[lang="it"] .lang-it {
+    text-decoration: underline;
+}

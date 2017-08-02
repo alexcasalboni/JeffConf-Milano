@@ -30,7 +30,6 @@
                 links[i].style.textDecoration = null;
             }
         }
-        
     }
 
     function pageLoad() {
@@ -48,7 +47,7 @@
 
             var sitePath = location.pathname.replace(/\//g, '');
 
-            if (sitePath.length > 0 && sitePath in siteMap) {
+            if (sitePath.length > 0 && siteMap[sitePath]) {
                 return changeArticle(sitePath);
             }
 
@@ -65,6 +64,31 @@
         }
     }
 
+    function switchLanguage() {
+        var texts = document.getElementsByClassName('lang');
+        var i, text;
+
+        for (i = 0; i < texts.length; i += 1) {
+            text = texts[i].innerHTML;
+            texts[i].innerHTML = texts[i].dataset.lang;
+            texts[i].dataset.lang = text;
+        }
+    }
+
+    function changeLanguage(lang) {
+        var html = document.getElementsByTagName("html")[0],
+            currentLang = html.lang,
+            langs = ['en', 'it'];
+
+        if (lang === currentLang || langs.indexOf(lang) === -1) {
+            return;  // nothing to do
+        }
+
+        html.lang = lang;
+        switchLanguage();
+
+    }
+
     window.onpopstate = function (event) {
         if (event) {
             pageLoad();
@@ -77,5 +101,6 @@
     };
 
     window.changePage = changePage;
+    window.changeLanguage = changeLanguage;
 
 })(window);
