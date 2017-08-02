@@ -52,12 +52,12 @@
             </div>
             <div class="dtc v-mid tr-ns tc pa3">
               <div onclick="changePage('home')" data-page="home" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Home</div> 
-              <div onclick="changePage('agenda')" data-page="agenda" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Agenda</div>
-              <div onclick="changePage('speakers')" data-page="speakers" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Speakers</div> 
-              <div onclick="changePage('venue')" data-page="venue" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Venue</div>
-              <div onclick="changePage('diversity')" data-page="diversity" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Diversity</div>
-              <div onclick="changePage('coc')" data-page="coc" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Code of Conduct</div>
-              <div onclick="changePage('tickets')" class="f5 fw4 shadow-hover no-underline white bg-dark-red grow shadow-hover dib ml2 pa2 ba b--transparent br1">Tickets</div> 
+              <div onclick="changePage('agenda')" data-page="agenda" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns" data-lang="Programma">Agenda</div>
+              <div onclick="changePage('speakers')" data-page="speakers" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns" data-lang="Speaker">Speakers</div> 
+              <div onclick="changePage('venue')" data-page="venue" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns" data-lang="Dove">Venue</div>
+              <!--<div onclick="changePage('diversity')" data-page="diversity" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Diversity</div>-->
+              <div onclick="changePage('coc')" data-page="coc" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns" data-lang="Codice di Comportamento">Code of Conduct</div>
+              <div onclick="changePage('tickets')" class="f5 fw4 shadow-hover no-underline white bg-dark-red grow shadow-hover dib ml2 pa2 ba b--transparent br1" data-lang="Biglietti">Tickets</div> 
             </div>
       </nav>
 
@@ -66,14 +66,15 @@
           <div class="tc-ns mt2 mt3-ns ph3">
             <h1 style="display: none;" class="f2 f1-l fw2 white-90 mb0 lh-title">JeffConf Milano 2017</h1>
             <img src="/imgs/jeffconf-italy.png" title="JeffConf Milano" />
-            <div onclick="changePage('tickets')" class="tc mw4 center pv2 bg-dark-red white f5 fw4 ba br2 b--transparent pointer grow shadow-hover">
+            <div onclick="changePage('tickets')" class="tc mw4 center pv2 bg-dark-red white f5 fw4 ba br2 b--transparent pointer grow shadow-hover"
+              data-lang="Acquista i Biglietti">
             Buy Tickets
             </div>
           </div>
         </div>
       </div> 
       <div class="center mw6 mw7-l bg-green pa3 tc ba b--transparent br2" style="margin-top: -30px">
-        <h2 class="ma0 f5 f4-l white code">Milan - 29 September 2017 - Grand Visconti Palace</h2> 
+        <h2 class="ma0 f5 f4-l white code" data-lang="Milano - 29 Settembre 2017 - Grand Visconti Palace">Milan - 29 September 2017 - Grand Visconti Palace</h2> 
       </div>
     </header>
       
@@ -82,8 +83,10 @@
         <div id="home" class="dtc w-100">
             <div class="tc tl-ns">
                 <div class="black mw6 mw8-ns tc center ph3 ph0-ns">
-                  <h3 class="lang f2 fw6 tc code" data-lang="Un giorno. Una traccia. Una community.">One Day. One Track. One Community.</h3>
-                  <p class="mw7-ns center">
+                  <h3 class="f2 fw6 tc code" data-lang="Un giorno. Una traccia. Una community.">One Day. One Track. One Community.</h3>
+                  <p class="mw7-ns center"
+                    data-lang="In collaborazione con il Meetup Serverless Italy, JeffConf va oltre la parola «Serverless» e si concentra sul valore che l'utilizzo di queste piattaforme può portare."
+                  >
                     A collaboration in conjunction with the Serverless Italy Meetup, JeffConf is an attempt to move past the word Serverless, and focus on the use of these platforms and the value they provide. 
                   </p>
                 </div>
@@ -96,10 +99,10 @@
                     <div class="pa2 ph3-ns pb3-ns bg-green">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
-                          <span class="fw6 f5 f4-ns mv0 white underline-hover">Venue</span>
+                          <span class="fw6 f5 f4-ns mv0 white underline-hover" data-lang="Dove">Venue</span>
                         </div>
                       </div>
-                      <p class="f6 lh-copy measure mt2 white-90">
+                      <p class="f6 lh-copy measure mt2 white-90" data-lang="Grand Visconti Palace è un mix di tradizione e modernità, in una posizione simbolica per la diffusione di nuove culture.">
                         Grand Visconti Palace is a mix of tradition and modernity in Milan, and an iconic location to spread cultural ideas.
                       </p>
                     </div>
@@ -110,10 +113,11 @@
                     <div class="pa2 ph3-ns pb3-ns bg-white">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
-                          <span class="fw6 f5 f4-ns mv0 underline-hover">Tickets</span>
+                          <span class="fw6 f5 f4-ns mv0 underline-hover" data-lang="Biglietti">Tickets</span>
                         </div>
                       </div>
-                      <p class="f6 lh-copy measure mt2 mid-gray">
+                      <p class="f6 lh-copy measure mt2 mid-gray"
+                        data-lang="La conferenza è stata pensata per essere accessibile a tutta la comunità: sono disponibili biglietti a partire da 35€.">
                         Tickets are reasonably priced from €35 to make sure it&#39;s financially accessible for the community.
                       </p>
                     </div>
@@ -124,10 +128,11 @@
                     <div class="pa2 ph3-ns pb3-ns bg-dark-red">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
-                          <span class="fw6 f5 f4-ns mv0 white underline-hover">Speakers</span>
+                          <span class="fw6 f5 f4-ns mv0 white underline-hover" data-lang="Speaker">Speakers</span>
                         </div>
                       </div>
-                      <p class="f6 lh-copy measure mt2 white-90 no-underline">
+                      <p class="f6 lh-copy measure mt2 white-90 no-underline"
+                        data-lang="Utenti che raccontano problemi che loro stessi hanno risolto utilizzando piattaforme serverless. L'obiettivo è: imparare grazie alla condivisione.">
                         Real users showcasing the problems they&#39;ve solved using serverless platforms. Focus is learning through sharing.
                       </p>
                     </div>
@@ -135,17 +140,29 @@
                   </div>
                 </div>
                 <div class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
-                  <p>
+                  <p data-lang="Serverless è diventata una parola «di moda». Per alcuni fa riferimento al futuro dello sviluppo software nel cloud mentre, per altri, evoca ricordi di marketing dei grandi provider">
                   Serverless is a buzzword that has marmite appeal. For some it points to the future of software development in a post cloud world, and for others it evokes memories of vendor marketers playing buzzword bingo.
                   </p>
                   <p>
-                  In the spirit of Paul Johnston&#39;s blog post, <a class="blue no-underline" href="https://serverless.zone/serverless-is-just-a-name-we-could-have-called-it-jeff-1958dd4c63d7" title="Serverless is just a name" target="_blank">&#34;Serverless is just a name. We could have called it Jeff&#34;</a>, JeffConf is born. It is a community focused, single track, one day conference, that moves away from the word, and focuses on the reality of Jeff (or Serverless) based solutions. It’s about fostering a community locally, and helping all of us learn from each other as we embrace a new way of building applications.
+                    <span data-lang="Nello spirito del blog post di Paul Johnston,">
+                      In the spirit of Paul Johnston&#39;s blog post,
+                    </span>
+                    <a class="blue no-underline" href="https://serverless.zone/serverless-is-just-a-name-we-could-have-called-it-jeff-1958dd4c63d7" title="Serverless is just a name" target="_blank"
+                      data-lang="«Serverless è solo un nome. Avremmo potuto chiamarlo Jeff» (link in inglese)"
+                    >&#34;Serverless is just a name. We could have called it Jeff&#34;</a>
+                    <span
+                     data-lang="è nata JeffConf. È una conferenza di un giorno, organizzata da e per tutta la comunità, in un singolo giorno e con un'unica traccia. JeffConf si concentra sulla realtà delle soluzioni basate su tecnologie serverless (o Jeff!). L'obiettivo è di alimentare la comuntà locale, aiutando ciascuno a imparare dagli altri un nuovo modo di progettare applicazioni."
+                    >, JeffConf is born. It is a community focused, single track, one day conference, that moves away from the word, and focuses on the reality of Jeff (or Serverless) based solutions. It’s about fostering a community locally, and helping all of us learn from each other as we embrace a new way of building applications.</span>
                   </p>
 
                 </div>
                 <div class="mw6 mw7-ns tc center pv1 pt2-ns pb3-ns">
-                  <h4 class="black f3 fw6 tc code">Diversity Program</h4>
-                  <p>
+                  <h4 class="black f3 fw6 tc code" data-lang="Programma Diversity">Diversity Program</h4>
+                  <p data-lang="
+                    Le community tech e i posti di lavoro sono da molto tempo dominati da maschi bianchi. Questa situazione ha portato a una scarsa diversità di pensiero, e a una frequente mancanza di empatia per chiunque non sia tale.
+                    Vogliamo cambiare ed è necessario che tutti ci mettano il massimo impegno.
+                    Anche alla JeffConf facciamo la nostra parte, eliminando le barriere finanziarie e offrendo biglietti gratuiti ai membri di gruppi che promuovono la «diversity» nel nostro settore. Inoltre, tutti i partecipanti che condividono questo pensiero possono acquistare i «Biglietti sponsor diversity», che includono, oltre all'ingresso standard, un biglietto che consentirà l'ingresso gratuito a un «Diversity scholar».
+                  ">
                   Technology communities and technology employment has been long dominated by white males. This leads to a lack of diversity of thought, $400 juicers, and a general lack of empathy for anyone that isn't a white male. To change this, a conscious effort is required from all sides. Here at JeffConf we're doing our bit by removing the financial barrier to attending by offering Diversity Scholarships for members of groups that promote diversity in tech, and allowing attendees to purchase Diversity sponsorship tickets, paying for themselves and for a Diversity scholar.
                   </p>
                   
@@ -174,7 +191,7 @@
     
         <div id="agenda" class="dn">
             <div class="tc tl-ns">
-                <h3 class="black f2 fw6 tc code">Agenda</h3>
+                <h3 class="black f2 fw6 tc code" data-lang="Programma">Agenda</h3>
                 <h4 class="black tc code">Coming soon!</h4>
 
             </div>
@@ -183,7 +200,7 @@
         <div id="speakers" class="dn">
 
             <div>
-                <h3 class="black f2 fw6 tc code">Speakers</h3>
+                <h3 class="black f2 fw6 tc code" data-lang="Speaker">Speakers</h3>
                 <h4 class="black tc">Coming soon!</h4>
 
             </div>
@@ -192,21 +209,33 @@
         <div id="venue" class="dn">
             <div class="tc tl-ns center">
                 <h3 class="black f2 fw6 tc code">Grand Visconti Palace</h3>
-                <p class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
+                <h4 class="black tc">
+                  Milano, viale Isonzo 14
+                </h4>
+                <p class="black mw6 mw7-ns tc center ph3 ph0-ns"
+                  data-lang="
+                    <b>Come Arrivare:</b> Metro M3 (linea gialla), fermata Lodi TIBB (a circa 10 minuti da Milano Centrale)
+
+                    A due passi dal centro di Milano il Grand Visconti Palace interpreta al meglio il senso meneghino di ospitalità, in perfetto equilibrio fra tradizione e contemporaneità, tra la cultura dell’accoglienza dei grand hotel di un tempo e la disponibilità delle moderne tecnologie al servizio del mondo degli eventi. L'hotel vanta un parco interno di 2.500 metri quadrati, con al suo interno il Giardino d’Inverno, un luminoso gazebo in ferro e cristallo che regala un’atmosfera emozionante con arredi etnici e sedute in pelle dai colori caldi e avvolgenti.
+                  "
+                >
+                  <b>How to get there:</b> M3 (yellow line) stop Lodi TIBB (a 10 minutes ride from the Main Railway Station)<br /><br />
                   The Grand Visconti Palace is a luxury hotel in Milan, Italy. Tradition and modernity are combined together to create this outstanding hotel. It also provides 14 meeting rooms, each named after the main gates of the city, such as Porta Romana, Porta Ticinese and Porta Vittoria. These gates are highly symbolic urban elements which, in the past, were bastions of resistance and places to meet and to spread cultural ideas.
                 </p>
                 <div class="mw6 mw7-ns center pa3 tc">
-                  <a class="no-underline pointer" href="https://www.google.it/maps?q=Grand+Visconti+Palace+milan&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjToMT73LXVAhVLshQKHSIAAqYQ_AUICygC" target="_blank" title="Grand Visconti Palace">
+                  <a class="no-underline pointer" href="https://www.google.it/maps?q=Grand+Visconti+Palace,+Milano&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjToMT73LXVAhVLshQKHSIAAqYQ_AUICygC" target="_blank" title="Grand Visconti Palace">
                     <img class="ba b--transparent" src="/imgs/jeffconf-milano-location.jpg" alt="Grand Visconti Palace" title="Grand Visconti Palace" />
                   </a>
                 </div>
                 <p class="black mw6 mw7-ns tc center mt3 ph3 ph0-ns">
-                Find out more about this fantastic venue <a href="http://www.grandviscontipalace.com/en" title="Grand Visconti Palace" target="_blank">here</a>!
+                <span data-lang="Scopri di più su questa magnifica location">Find out more about this fantastic venue</a>
+                </span>
+                <a href="http://www.grandviscontipalace.com/en" title="Grand Visconti Palace" target="_blank" data-lang="qui">here</a>!
                 </p>
             </div>
         </div>
 
-        <div id="diversity" class="dn">
+        <!--<div id="diversity" class="dn">
             <div class="tc tl-ns">
                 <h3 class="black f2 fw6 tc code">Apply for Diversity Tickets</h3>
                 <div class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
@@ -235,26 +264,35 @@
                 </div>
 
             </div>
-        </div>
+        </div>-->
     
         <div id="coc" class="dn">
             <div class="tc tl-ns">
-                <h3 class="black f2 fw6 tc code">Code of Conduct</h3>
+                <h3 class="black f2 fw6 tc code" data-lang="Codice di Comportamento">Code of Conduct</h3>
                 
                 <div class="black mw6 tc center">
-                    <p>
+                    <p data-lang="
+                      Tutti i partecipanti, gli speaker, gli sponsor e i volontari che partecipano alla nostra conferenza devono accettare il Codice di Comportamento presentato di seguito. Sarà compito degli Organizzatori di verificarne il rispetto durante tutta la durata dell'evento.
+                      È compito di chiunque aiutarci ad assicurare un ambiente sereno e ospitale per tutti.
+                    ">
                     All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
                     </p>
-                    <p>
+                    <p data-lang="tl;dr: Jeff dice di essere eccellenti l'uno con l'altro">
                     tl;dr: Jeff says be excellent with each other
                     </p>
-                    <p class="fw6">
+                    <p class="fw6" data-lang="Versione breve">
                     The Quick Version
                     </p>
-                    <p>
-                    Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
+                    <p data-lang="
+                    La nostra conferenza offre a ciascuno un'esperienza libera da discriminazioni, indifferentemente da genere, identità di genere, identità sessuale, orientamento sessuale, età, disabilità, apparenza fisica, razza, e religione.
+                    Non tolleriamo qualsiasi genere di molestie, per alcun motivo.
+                    Inoltre, un linguaggio spinto non è appropriato all'interno della conferenza, tra i partecipanti, durante i talk, durante i workshop, su Twitter e sugli altri social media.
+                    I partecipanti che dovessero violare queste regole, saranno allontanati immediatamente senza possibilità di rimborso del biglietto.
+                    ">
+                    Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form.
+                    Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
                     </p>
-                    <p class="fw6">
+                    <p class="fw6" data-lang="Versione integrale (in inglese)">
                     The Less Quick Version
                     </p>
                     <p>
@@ -286,7 +324,7 @@
         
         <div id="tickets" class="dn">
             <div class="tc tl-ns">
-                <h3 class="black f2 fw6 tc code">Tickets</h3>
+                <h3 class="black f2 fw6 tc code" data-lang="Biglietti">Tickets</h3>
                 <div class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
                   <p>
                     We want to make JeffConf accessible, so have kept prices low to ensure maximum accessibility. You can even buy a Diversity Scholar ticket and we will gift it to a Diversity Scholar for free.
@@ -308,7 +346,7 @@
 
 <footer class="center tc f6">
   <div class="w-100 tc pt3">
-    <h4 class="black f3 fw6 tc code mt1 mb0">Sponsors</h4>
+    <h4 class="black f3 fw6 tc code mt1 mb0" data-lang="Sponsor">Sponsors</h4>
     <div class="dt center pt3 pb4">
       <div class="dt-row pa3 pa2-ns">
         <div class="dtc-ns w-100 w-50-ns v-mid">
@@ -378,34 +416,34 @@
     <div class="w-100 mw8-l mw6-m ph2 ph0-ns center">
       <div class="fl mw5-ns mh6">
           <p onclick="changePage('home')" data-page="home" class="nav-link fw1 shadow-hover underline-hover tl mv0">Home</p> 
-          <p onclick="changePage('agenda')" data-page="agenda" class="nav-link fw1 shadow-hover underline-hover tl mv1">Agenda</p>
-          <p onclick="changePage('speakers')" data-page="speakers" class="nav-link fw1 shadow-hover underline-hover tl mv1">Speakers</p>
-          <p onclick="changePage('venue')" data-page="venue" class="nav-link fw1 shadow-hover underline-hover tl mv1">Venue</p>
-          <p onclick="changePage('diversity')" data-page="diversity" class="nav-link fw1 shadow-hover underline-hover tl mv1">Diversity</p>
-          <p onclick="changePage('coc')" data-page="coc" class="nav-link fw1 shadow-hover underline-hover tl mv1">Code of Conduct</p>
-          <p onclick="changePage('tickets')" data-page="tickets" class="nav-link fw1 shadow-hover underline-hover tl mv1">Tickets</p> 
+
+          <p onclick="changePage('agenda')" data-page="agenda" class="nav-link fw1 shadow-hover underline-hover tl mv1" data-lang="Programma">Agenda</p>
+          <p onclick="changePage('speakers')" data-page="speakers" class="nav-link fw1 shadow-hover underline-hover tl mv1" data-lang="Speaker">Speakers</p>
+          <p onclick="changePage('venue')" data-page="venue" class="nav-link fw1 shadow-hover underline-hover tl mv1" data-lang="Dove">Venue</p>
+          <!--<p onclick="changePage('diversity')" data-page="diversity" class="nav-link fw1 shadow-hover underline-hover tl mv1">Diversity</p>-->
+          <p onclick="changePage('coc')" data-page="coc" class="nav-link fw1 shadow-hover underline-hover tl mv1" data-lang="Codice di Comportamento">Code of Conduct</p>
+          <p onclick="changePage('tickets')" data-page="tickets" class="nav-link fw1 shadow-hover underline-hover tl mv1" data-lang="Biglietti">Tickets</p> 
       </div>
       <div class="fl mw5-ns ml6">
           <p class="fw6 tl mv0 white pointer underline-hover nav-link" data-page="venue" onclick="changePage('venue')">Grand Visconti Palace</p>
           <p class="fw1 tl mv1">Viale Isonzo, 14</p>
-          <p class="fw1 tl mv1">Milan</p>
+          <p class="fw1 tl mv1" data-lang="Milano">Milan</p>
           <p class="fw1 tl mv0">Italy</p>
       </div>
       <div class="fl mw5-ns ml6">
-          <p class="fw6 tl mv0 white">29 September 2017</p>
+          <p class="fw6 tl mv0 white" data-lang="29 Settembre 2017">29 September 2017</p>
           <p class="fw1 tl mv1">
-              In collaboration with
-              <a href="https://www.meetup.com/Serverless-Italy/" title="Serverless Italy Meetup" target="_blank" class="fw5 dark-red no-underline underline-hover">Serverless Italy</a>
+            <span data-lang="In collaborazione con il Meetup">In collaboration with</span>
+            <a href="https://www.meetup.com/Serverless-Italy/" title="Serverless Italy Meetup" target="_blank" class="fw5 dark-red no-underline underline-hover">Serverless Italy</a>
           </p>
           <p class="fw1 tl mv0">
-            Email us at
+            <span data-lang="Scrivici a">Email us at</span>
             <a class="fw1 tl mt0 mb1 no-underline fw5 underline-hover dark-red" href="mailto:milan@jeffconf.com">milan@jeffconf.com</a>
           </p>
           <p class="tl">
-              <a href="https://twitter.com/jeffconf" class="twitter-follow-button" data-show-count="false" data-link-color="#000000" data-text-color="#000000">Follow @jeffconf</a>
+              <a href="https://twitter.com/jeffconf" class="twitter-follow-button" data-show-count="false" data-link-color="#000000" data-text-color="#000000" data-lang="Segui @jeffconf">Follow @jeffconf</a>
               <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           </p>
-
       </div>
     </div>
   </div>
