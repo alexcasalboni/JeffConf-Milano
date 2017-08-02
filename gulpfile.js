@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
+var minifyInline = require('gulp-minify-inline');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var browserSync = require('browser-sync').create();
@@ -19,7 +20,8 @@ gulp.task('minify', function () {
     "use strict";
     return gulp
         .src('src/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
+        .pipe(minifyInline())
         .pipe(gulp.dest('dist'));
 });
 
@@ -38,7 +40,7 @@ gulp.task('copy-libs', function () {
     "use strict";
     return gulp
         .src([
-            'src/libs/**',
+            'src/libs/**'
         ])
         .pipe(gulp.dest('dist/libs'));
 });
@@ -47,7 +49,7 @@ gulp.task('copy-imgs', function () {
     "use strict";
     return gulp
         .src([
-            'src/imgs/**',
+            'src/imgs/**'
         ])
         .pipe(gulp.dest('dist/imgs'));
 });
