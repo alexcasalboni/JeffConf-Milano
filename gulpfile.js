@@ -31,7 +31,8 @@ gulp.task('copy', function () {
         .src([
             'src/*.xml',
             'src/*.css',
-            'src/*.txt'
+            'src/*.txt',
+            'src/*.json'
         ])
         .pipe(gulp.dest('dist'));
 });
