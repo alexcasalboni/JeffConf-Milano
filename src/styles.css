@@ -6,10 +6,14 @@
 }
 
 .lang-switch-link {
-    /* TODO */
+    transition: opacity 300ms;
 }
 
-[lang="en"] .lang-en,
-[lang="it"] .lang-it {
-    text-decoration: underline;
+.lang-switch-link img{
+    border-radius: 50%;
+}
+
+[lang="en"] .lang-it,
+[lang="it"] .lang-en {
+    opacity: 0.3;
 }
