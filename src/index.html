@@ -17,6 +17,28 @@
     <link rel="shortcut icon" type="image/x-icon" href="/imgs/jeff-italy.ico"/>
     <link rel="stylesheet" href="/libs/tachyons.min.css" />
     <link rel="stylesheet" href="/styles.css" />
+    <style>
+    .lang-switch-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+    }
+
+    .lang-switch-link {
+        transition: opacity 300ms;
+        padding: 0 3px;
+    }
+
+    .lang-switch-link img{
+        border-radius: 50%;
+    }
+
+    [lang="en"] .lang-it,
+    [lang="it"] .lang-en {
+        opacity: 0.3;
+    }
+    </style>
   </head>
 
   <body class="bg-white">
@@ -24,7 +46,7 @@
       <nav class="dt w-100 mw8 center h3-ns">
             <div class="dtc-ns dn v-mid ph3 pv1">
               <div onclick="changePage('home')" class="tc pa1 grow-large">
-                <img src="/imgs/jeff-italy.png" alt="The Italian Jeff" height="54" />
+                <img src="/imgs/jeff-italy-small.png" alt="The Italian Jeff" height="54" />
               </div>
             </div>
             <div class="dtc v-mid tr-ns tc pa3">
