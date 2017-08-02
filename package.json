@@ -2,7 +2,10 @@
   "name": "jeffconf-milano",
   "version": "0.0.1",
   "description": "JeffConf Milano website",
-  "scripts": {},
+  "scripts": {
+    "dev": "./node_modules/.bin/gulp serve-dev",
+    "build": "./node_modules/.bin/gulp build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexcasalboni/JeffConf-Milano.git"
