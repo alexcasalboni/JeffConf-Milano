@@ -67,7 +67,7 @@
     }
 
     function switchLanguage() {
-        var texts = document.getElementsByClassName('lang');
+        var texts = document.querySelectorAll('[data-lang]');
         var i, text;
 
         for (i = 0; i < texts.length; i += 1) {
