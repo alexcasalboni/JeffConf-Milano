@@ -27,12 +27,12 @@
               </div>
             </div>
             <div class="dtc v-mid tr-ns tc pa3">
-              <div onclick="changePage('home')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Home</div> 
-              <div onclick="changePage('agenda')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Agenda</div>
-              <div onclick="changePage('speakers')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Speakers</div> 
-              <div onclick="changePage('venue')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Venue</div>
-              <div onclick="changePage('diversity')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Diversity</div>
-              <div onclick="changePage('coc')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Code of Conduct</div>
+              <div onclick="changePage('home')" data-page="home" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Home</div> 
+              <div onclick="changePage('agenda')" data-page="agenda" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Agenda</div>
+              <div onclick="changePage('speakers')" data-page="speakers" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Speakers</div> 
+              <div onclick="changePage('venue')" data-page="venue" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Venue</div>
+              <div onclick="changePage('diversity')" data-page="diversity" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Diversity</div>
+              <div onclick="changePage('coc')" data-page="coc" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Code of Conduct</div>
               <div onclick="changePage('tickets')" class="f5 fw4 shadow-hover no-underline white bg-dark-red grow shadow-hover dib ml2 pa2 ba b--transparent br1">Tickets</div> 
             </div>
       </nav>
@@ -41,7 +41,7 @@
         <div class="dtc"> 
           <div class="tc-ns mt2 mt3-ns ph3">
             <h1 style="display: none;" class="f2 f1-l fw2 white-90 mb0 lh-title">JeffConf Milano 2017</h1>
-            <img src="/imgs/jeffconf-milano.png" title="JeffConf Milano" />
+            <img src="/imgs/jeffconf-italy.png" title="JeffConf Milano" />
             <div onclick="changePage('tickets')" class="tc mw4 center pv2 bg-dark-red white f5 fw4 ba br2 b--transparent pointer grow shadow-hover">
             Buy Tickets
             </div>
@@ -71,7 +71,7 @@
                   <div class="dt-row-ns">
 
                   <article onclick="changePage('venue')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
-                    <img src="https://res.cloudinary.com/senzo/image/upload/v1496227533/St_John_the_Baptist_vwoyvm.jpg" class="db w-100" alt="JeffConf 2017 Venue" />
+                    <img src="/imgs/gvp-small.jpg" class="db w-100 dim" alt="JeffConf Milan 2017 Venue" height="143" />
                     <div class="pa2 ph3-ns pb3-ns bg-dark-red">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
@@ -85,7 +85,7 @@
                   </article>
 
                   <article onclick="changePage('tickets')" class="dtc-ns bb b--gray black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
-                    <img src="https://res.cloudinary.com/senzo/image/upload/v1496227851/disk_w1wn8t.jpg" class="db w-100" alt="JeffConf 2017 Tickets" />
+                    <img src="/imgs/food.jpg" class="db w-100 dim" alt="JeffConf 2017 Tickets" height="143" />
                     <div class="pa2 ph3-ns pb3-ns bg-white">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
@@ -99,7 +99,7 @@
                   </article>
 
                   <article onclick="changePage('speakers')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
-                    <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_256/v1496227230/paulj2_jqdmuh.jpg" class="db w-100" alt="Photo of Paul looking menacing.">
+                    <img src="/imgs/speakers.jpg" class="db w-100 dim" alt="JeffConf Speakers" height="143" />
                     <div class="pa2 ph3-ns pb3-ns bg-green">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
@@ -285,10 +285,65 @@
     <h4 class="black f3 fw6 tc code mt1 mb0">Sponsors</h4>
     <div class="dt center pt3 pb4">
       <div class="dt-row pa3 pa2-ns">
-        <div class="dtc-ns w-100 w-20-ns v-mid pa3">
-          <a class="no-underline pointer" href="https://aws.amazon.com" target="_blank">
-            <img class="grow" src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_230/v1498631673/AmazonWebservices_Logo.svg_hqs8m4.png" alt="AWS" title="AWS" />
+        <div class="dtc-ns w-100 w-50-ns v-mid">
+          <a class="no-underline pointer" href="https://aws.amazon.com" target="_blank" title="Amazon Web Services">
+            <img class="grow" src="/imgs/aws.png" alt="AWS" title="AWS" />
           </a>
+        </div>
+        <div class="dtc-ns w-100 w-100-ns v-mid">
+          <div class="dt w-100">
+            <div class="dt-row">
+
+              <div class="dtc-ns w-10-ns v-mid pa3"></div>
+
+              <div class="dtc-ns w-100 w-30-ns v-mid pa3">
+                <a class="no-underline pointer" href="http://linkme.it" target="_blank" title="LinkMe">
+                  <img class="grow" src="/imgs/linkme.jpg" alt="LinkMe" title="LinkMe" />
+                </a>
+              </div>
+
+              <div class="dtc-ns w-100 w-30-ns v-mid pa3">
+                <a class="no-underline pointer" href="http://www.azatec.com/" target="_blank" title="Azatec Consulting">
+                  <img class="grow" src="/imgs/azatec.jpg" alt="Azatec Consulting" title="Azatec Consulting" />
+                </a>
+              </div>
+
+              <div class="dtc-ns w-10-ns v-mid pa3"></div>
+              <!--
+              <div class="dtc-ns w-100 w-30-ns v-mid pa3">
+                <a class="no-underline pointer" href="http://cloud-alliance.it/" target="_blank" title="Cloud Alliance">
+                  <img class="grow" src="/imgs/cloud-alliance.png" alt="Cloud Alliance" title="Cloud Alliance" />
+                </a>
+              </div>
+            -->
+
+            </div>
+
+          </div>
+
+          <div class="dt w-100">
+
+            <div class="dt-row">
+
+              <div class="dtc-ns w-10-ns v-mid pa3"></div>
+
+              <div class="dtc-ns w-100 w-30-ns v-mid pa3">
+                <a class="no-underline pointer" href="https://www.digitalattitude.tech" target="_blank" title="Digital Attitude">
+                  <img class="grow" src="/imgs/digital-attitude.jpg" alt="Digital Attitude" title="Digital Attitude"/>
+                </a>
+              </div>
+
+              <div class="dtc-ns w-100 w-30-ns v-mid pa3">
+                <a class="no-underline pointer" href="http://cloudacademy.com" target="_blank" title="Cloud Academy">
+                  <img class="grow" src="/imgs/cloudacademy.jpg" alt="Cloud Academy" title="Cloud Academy"/>
+                </a>
+              </div>
+
+              <div class="dtc-ns w-10-ns v-mid pa3"></div>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -296,13 +351,13 @@
   <div class="w-100 pt3 pb6 mt2 bg-green white-90 center">
     <div class="w-100 mw8-l mw6-m ph2 ph0-ns center">
       <div class="fl mw5-ns mh6">
-          <p onclick="changePage('home')" class="fw1 shadow-hover no-underline tl mv0">Home</p> 
-          <p onclick="changePage('agenda')" class="fw1 shadow-hover no-underline tl mv0">Agenda</p>
-          <p onclick="changePage('speakers')" class="fw1 shadow-hover no-underline tl mv0">Speakers</p>
-          <p onclick="changePage('venue')" class="fw1 shadow-hover no-underline tl mv0">Venue</p>
-          <p onclick="changePage('diversity')" class="fw1 shadow-hover no-underline tl mv0">Diversity</p> 
-          <p onclick="changePage('coc')" class="fw1 shadow-hover no-underline tl mv0">Code of Conduct</p>
-          <p onclick="changePage('tickets')" class="fw1 shadow-hover no-underline tl mv0">Tickets</p> 
+          <p onclick="changePage('home')" data-page="home" class="nav-link fw1 shadow-hover underline-hover tl mv0">Home</p> 
+          <p onclick="changePage('agenda')" data-page="agenda" class="nav-link fw1 shadow-hover underline-hover tl mv0">Agenda</p>
+          <p onclick="changePage('speakers')" data-page="speakers" class="nav-link fw1 shadow-hover underline-hover tl mv0">Speakers</p>
+          <p onclick="changePage('venue')" data-page="venue" class="nav-link fw1 shadow-hover underline-hover tl mv0">Venue</p>
+          <p onclick="changePage('diversity')" data-page="diversity" class="nav-link fw1 shadow-hover underline-hover tl mv0">Diversity</p> 
+          <p onclick="changePage('coc')" data-page="coc" class="nav-link fw1 shadow-hover underline-hover tl mv0">Code of Conduct</p>
+          <p onclick="changePage('tickets')" data-page="tickets" class="nav-link fw1 shadow-hover underline-hover tl mv0">Tickets</p> 
       </div>
       <div class="fl mw5-ns ml6">
           <p class="fw6 tl mv0 white">Grand Visconti Palace</p>
@@ -313,7 +368,7 @@
       <div class="fl mw5-ns ml6">
           <p class="fw6 tl mv0 white">29 September 2017</p>
           <p class="fw1 tl mv0">In collaboration with Serverless Italy</p>
-          <a class="fl fw1 tl mt0 mb1 no-underline fw5" href="mailto:milan@jeffconf.com">milan@jeffconf.com</a>
+          <a class="fl fw1 tl mt0 mb1 no-underline fw5 underline-hover" href="mailto:milan@jeffconf.com">milan@jeffconf.com</a>
           <p class="tl">
               <a href="https://twitter.com/jeffconf" class="twitter-follow-button" data-show-count="false" data-link-color="#000000" data-text-color="#000000">Follow @jeffconf</a>
               <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>

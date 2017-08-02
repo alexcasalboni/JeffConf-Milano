@@ -12,15 +12,25 @@
     }
 
     function changeArticle(elementID) {
-        var contentBody = document.getElementById("contentBody").children;
+        var sections = document.getElementById("contentBody").children;
         var i;
-        for (i = 0; i < contentBody.length; i += 1) {
-            if (contentBody[i].id === elementID) {
-                contentBody[i].className = "dtc w-100";
+        for (i = 0; i < sections.length; i += 1) {
+            if (sections[i].id === elementID) {
+                sections[i].className = "dtc w-100";
             } else {
-                contentBody[i].className = "dn";
+                sections[i].className = "dn";
             }
         }
+        var links = document.getElementsByClassName("nav-link");
+
+        for (i = 0; i < links.length; i += 1) {
+            if (links[i].dataset && links[i].dataset.page === elementID) {
+                links[i].style.textDecoration = 'underline';
+            } else {
+                links[i].style.textDecoration = null;
+            }
+        }
+        
     }
 
     function pageLoad() {
