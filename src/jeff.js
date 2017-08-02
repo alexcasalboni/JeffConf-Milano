@@ -2,6 +2,8 @@
 
     'use strict';
 
+    const LANGS = ['en', 'it'];
+
     function changePage(elementID) {
         if (!document.getElementById(elementID)) {
             return;
@@ -77,16 +79,16 @@
 
     function changeLanguage(lang) {
         var html = document.getElementsByTagName("html")[0],
-            currentLang = html.lang,
-            langs = ['en', 'it'];
+            currentLang = html.lang;
 
-        if (lang === currentLang || langs.indexOf(lang) === -1) {
+        if (lang === currentLang || LANGS.indexOf(lang) === -1) {
             return;  // nothing to do
         }
 
         html.lang = lang;
-        switchLanguage();
+        window.localStorage.preferredLanguage = lang;
 
+        switchLanguage();
     }
 
     window.onpopstate = function (event) {
@@ -102,5 +104,10 @@
 
     window.changePage = changePage;
     window.changeLanguage = changeLanguage;
+
+    if (window.localStorage.preferredLanguage &&
+        window.localStorage.preferredLanguage !== LANGS[0]) {
+        changeLanguage(window.localStorage.preferredLanguage);
+    }
 
 })(window);
