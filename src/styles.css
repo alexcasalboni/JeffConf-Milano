@@ -7,6 +7,7 @@
 
 .lang-switch-link {
     transition: opacity 300ms;
+    padding: 0 3px;
 }
 
 .lang-switch-link img{
