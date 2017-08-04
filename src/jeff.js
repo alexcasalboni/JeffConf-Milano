@@ -38,9 +38,9 @@
             agenda: true,
             speakers: true,
             venue: true,
-            partners: true,
             coc: true,
-            tickets: true
+            tickets: true,
+            diversity: true
         };
 
         if (location.pathname !== "") {
