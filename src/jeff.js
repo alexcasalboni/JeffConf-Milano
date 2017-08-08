@@ -60,7 +60,7 @@
     function loadEventbrite() {
         var iframe = document.getElementById("eventbrite");
         if (iframe) {
-            iframe.src = "//eventbrite.co.uk/tickets-external?eid=34905982734&ref=etckt";
+            iframe.src = "//eventbrite.com/tickets-external?eid=36770706172&ref=etckt";
         }
     }
 
