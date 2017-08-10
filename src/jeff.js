@@ -2,7 +2,7 @@
 
     'use strict';
 
-    const LANGS = ['en', 'it'];
+    var LANGS = ['en', 'it'];
 
     function changePage(elementID) {
         if (!document.getElementById(elementID)) {
