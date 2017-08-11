@@ -32,6 +32,10 @@
                 links[i].style.textDecoration = null;
             }
         }
+        if (window.ga) {
+            ga('set', 'page', '/' + elementID);
+            ga('send', 'pageview');
+        }
     }
 
     function pageLoad() {
