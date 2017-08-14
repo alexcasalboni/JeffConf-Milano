@@ -39,6 +39,12 @@
     [lang="it"] .lang-en {
         opacity: 0.3;
     }
+    .flag-bg-container { min-height: 180px; }
+    .it-green-bg { background-color: rgb(0, 146, 70); }
+    .it-white-bg { background-color: rgb(241, 242, 241); }
+    .it-red-bg { background-color: rgb(206, 43, 55); }
+    .header-stripe { margin-top: -30px; }
+    .header-img { background-image: url(/imgs/milano.jpg); }
     </style>
   </head>
 
@@ -46,7 +52,7 @@
     <header class="sans-serif navy">
       <nav class="dt w-100 mw8 center h3-ns">
             <div class="dtc-ns dn v-mid ph3 pv1">
-              <div onclick="changePage('home')" class="tc pa1 grow-large">
+              <div onclick="changePage('home')" class="tc pa1 grow-large pointer">
                 <img src="/imgs/jeff-italy-small.png" alt="The Italian Jeff" height="54" />
               </div>
             </div>
@@ -57,23 +63,23 @@
               <div onclick="changePage('venue')" data-page="venue" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns" data-lang="Dove">Venue</div>
               <div onclick="changePage('diversity')" data-page="diversity" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns">Diversity</div>
               <div onclick="changePage('coc')" data-page="coc" class="nav-link f5 fw4 pointer underline-hover dib pa1 pa2-ns" data-lang="Codice di Comportamento">Code of Conduct</div>
-              <div onclick="changePage('tickets')" class="f5 fw4 shadow-hover no-underline white bg-dark-red grow shadow-hover dib ml2 pa2 ba b--transparent br1" data-lang="Biglietti">Tickets</div> 
+              <div onclick="changePage('tickets')" class="f5 fw4 shadow-hover no-underline white it-red-bg grow shadow-hover dib ml2 pa2 ba b--transparent br1" data-lang="Biglietti">Tickets</div>
             </div>
       </nav>
 
-      <div class="dt w-100 vh-50 center cover" style="background-image: url(/imgs/milano.jpg)">
+      <div class="dt w-100 vh-50 center cover header-img">
         <div class="dtc"> 
           <div class="tc-ns mt2 mt3-ns ph3">
-            <h1 style="display: none;" class="f2 f1-l fw2 white-90 mb0 lh-title">JeffConf Milano 2017</h1>
+            <h1 class="dn f2 f1-l fw2 white-90 mb0 lh-title">JeffConf Milano 2017</h1>
             <img src="/imgs/jeffconf-italy.png" title="JeffConf Milano" />
-            <div onclick="changePage('tickets')" class="tc mw4 center pv2 bg-dark-red white f5 fw4 ba br2 b--transparent pointer grow shadow-hover"
+            <div onclick="changePage('tickets')" class="tc mw4 center pv2 it-red-bg white f5 fw4 ba br2 b--transparent pointer grow shadow-hover"
               data-lang="Biglietti">
             Buy Tickets
             </div>
           </div>
         </div>
       </div> 
-      <div class="center mw6 mw7-l bg-green pa3 tc ba b--transparent br2" style="margin-top: -30px">
+      <div class="center mw6 mw7-l it-green-bg pa3 tc ba b--transparent br2 header-stripe">
         <h2 class="ma0 f5 f4-l white code" data-lang="Milano - 29 Settembre 2017 - Grand Visconti Palace">Milan - 29 September 2017 - Grand Visconti Palace</h2> 
       </div>
     </header>
@@ -96,7 +102,7 @@
 
                   <article onclick="changePage('venue')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
                     <img src="/imgs/gvp-small.jpg" class="db w-100 dim" alt="JeffConf Milan 2017 Venue" height="143" />
-                    <div class="pa2 ph3-ns pb3-ns bg-green">
+                    <div class="pa2 ph3-ns pb3-ns it-green-bg flag-bg-container">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
                           <span class="fw6 f5 f4-ns mv0 white underline-hover" data-lang="Dove">Venue</span>
@@ -108,9 +114,9 @@
                     </div>
                   </article>
 
-                  <article onclick="changePage('tickets')" class="dtc-ns bb b--gray black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
+                  <article onclick="changePage('tickets')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
                     <img src="/imgs/food.jpg" class="db w-100 dim" alt="JeffConf 2017 Tickets" height="143" />
-                    <div class="pa2 ph3-ns pb3-ns bg-white">
+                    <div class="pa2 ph3-ns pb3-ns it-white-bg flag-bg-container bb b--gray">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
                           <span class="fw6 f5 f4-ns mv0 underline-hover" data-lang="Biglietti">Tickets</span>
@@ -118,21 +124,21 @@
                       </div>
                       <p class="f6 lh-copy measure mt2 mid-gray"
                         data-lang="La conferenza è stata pensata per essere accessibile a tutta la comunità: sono disponibili biglietti a partire da 35€.">
-                        Tickets are reasonably priced from €35 to make sure it&#39;s financially accessible for the community.
+                        Tickets are reasonably priced from €35 to make sure JeffConf Milan is financially accessible for the community.
                       </p>
                     </div>
                   </article>
 
                   <article onclick="changePage('speakers')" class="dtc-ns black-60 mv1 mv4-ns w-100 w-33-ns mw5 center pointer">
                     <img src="/imgs/speakers.jpg" class="db w-100 dim" alt="JeffConf Speakers" height="143" />
-                    <div class="pa2 ph3-ns pb3-ns bg-dark-red">
+                    <div class="pa2 ph3-ns pb3-ns it-red-bg flag-bg-container">
                       <div class="dt w-100 mt1">
                         <div class="dtc">
                           <span class="fw6 f5 f4-ns mv0 white underline-hover" data-lang="Speaker">Speakers</span>
                         </div>
                       </div>
                       <p class="f6 lh-copy measure mt2 white-90 no-underline"
-                        data-lang="Sviluppatori e ingegneri ci parleranno dei problemi che hanno risolto utilizzando piattaforme serverless. L'obiettivo è: imparare grazie alla condivisione.">
+                        data-lang="Sviluppatori e ingegneri ci parleranno dei problemi risolti utilizzando tecnologie serverless. L'obiettivo è imparare grazie alla condivisione.">
                         Real users showcasing the problems they&#39;ve solved using serverless platforms. Focus is learning through sharing.
                       </p>
                     </div>
@@ -172,7 +178,7 @@
                   </p>
 
                   <div class="w-100 center tc mv4">
-                    <a id="diversity-apply-home" href="https://serverless-italy.typeform.com/to/ZTej0Y" class="tc mw4 center ph4 pv2 v-mid no-underline bg-green white f5 fw6 ba br2 b--transparent pointer" target="_blank" data-lang="Richiedi">Apply</a>
+                    <a id="diversity-apply-home" href="https://serverless-italy.typeform.com/to/ZTej0Y" class="tc mw4 center ph4 pv2 v-mid no-underline it-green-bg white f5 fw6 ba br2 b--transparent pointer" target="_blank" data-lang="Richiedi">Apply</a>
                   </div>
 
                   <p class="mt5">
@@ -607,7 +613,7 @@
                   If you wish to apply for a diversity ticket simply click the button below.
                   </p>
                   <div class="w-100 center tc mv4">
-                    <a id="diversity-apply" href="https://serverless-italy.typeform.com/to/ZTej0Y" class="tc mw4 center ph4 pv2 v-mid no-underline bg-green white f5 fw6 ba br2 b--transparent pointer" target="_blank"
+                    <a id="diversity-apply" href="https://serverless-italy.typeform.com/to/ZTej0Y" class="tc mw4 center ph4 pv2 v-mid no-underline it-green-bg white f5 fw6 ba br2 b--transparent pointer" target="_blank"
                       data-lang="Richiedi">Apply</a>
                   </div>
                   <h4 class="black f3 fw6 tc code mt5" data-lang="Partner <em>Diversity</em>">Diversity Partners</h4>
@@ -783,7 +789,7 @@
       </div>
     </div>
 
-  <div class="w-100 pt3 pb6 mt2 bg-green white-90 center">
+  <div class="w-100 pt3 pb6 mt2 it-green-bg white-90 center">
     <div class="w-100 mw8-l mw6-m ph2 ph0-ns center">
       <div class="fl mw5-ns mh6">
           <p onclick="changePage('home')" data-page="home" class="nav-link fw1 shadow-hover underline-hover tl mv0">Home</p> 
@@ -818,7 +824,7 @@
     </div>
   </div>
 
-  <div class="f6 fw1 w-100 pt1 bg-green white-90 pb1">
+  <div class="f6 fw1 w-100 pt1 it-green-bg white-90 pb1">
     <p>
     Copyright &#169; JeffConf 2017
     </p>
