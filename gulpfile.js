@@ -29,7 +29,7 @@ gulp.task('compress', function (cb) {
 });
 
 
-gulp.task('minify', function () {
+gulp.task('minify', ['fileinclude'], function () {
     "use strict";
     return gulp
         .src('src/*.html')
@@ -90,7 +90,7 @@ gulp.task('watch', ['fileinclude', 'serve-dev'], function () {
 });
 
 
-gulp.task('serve-dist', function () {
+gulp.task('serve-dist', ['build'], function () {
     "use strict";
     browserSync.init({
         server: {
