@@ -36,6 +36,10 @@
         transition: opacity 300ms;
         padding: 0 3px;
     }
+    .lang-switch-link img {
+        width: 20px;
+        height: 20px;
+    }
 
     .lang-switch-link img,
     #agenda img{
@@ -103,8 +107,14 @@
     @@include('./footer.html')
 
     <div class="lang-switch-container">
-      <span class="lang-switch-link lang-it underline-hover pointer" onclick="changeLanguage('it')"><img class="grow shadow-4" src="/imgs/flag-it.png" title="Italiano" alt="IT" width="20" height="20" /></span>
-      <span class="lang-switch-link lang-en underline-hover pointer" onclick="changeLanguage('en')"><img class="grow shadow-4" src="/imgs/flag-en.png" title="English" alt="EN" width="20" height="20" /></span>
+      <span class="lang-switch-link lang-it underline-hover pointer" onclick="changeLanguage('it')">
+        @@include('./icon-it.html')
+        <!--<img class="grow shadow-4" src="/imgs/flag-it.png" title="Italiano" alt="IT" width="20" height="20" />-->
+      </span>
+      <span class="lang-switch-link lang-en underline-hover pointer" onclick="changeLanguage('en')">
+        @@include('./icon-en.html')
+        <!--<img class="grow shadow-4" src="/imgs/flag-en.png" title="English" alt="EN" width="20" height="20" />-->
+      </span>
     </div>
 
     <script type="text/javascript" src="/jeff.js"></script>
