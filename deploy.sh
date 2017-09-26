@@ -1,0 +1,1 @@
+aws s3 sync dist s3://milan.jeffconf.com --cache-control max-age=604800 --delete --exclude "**.DS_Store" --profile jeffconf --dryrun
